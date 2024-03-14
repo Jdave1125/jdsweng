@@ -245,11 +245,16 @@ p{
   box-shadow: 1px 1px 10px 1px ;
 }
 .photo{
-  width: 85%;
+
+  width: 75%;
+  height: 70%;
+  margin-left: 10%;
   margin-top: 5%;
   /* height: 75%; */
   border-radius: 50%;
   box-shadow: 0px 0px 20px 1px  black;
+  background: url('/IMG_5586.jpg');
+  background-size: cover;
 
 }
 .stats{

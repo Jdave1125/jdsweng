@@ -197,7 +197,7 @@ const HomePage = () => {
        
         <div className='collage'>
           <div className='portrait'>
-            <img src='IMG_5586.jpg' className="photo" alt='picture of a ridiculously handome man'/>
+            <div className="photo"></div>
             <h1 className='portraitName'>Jeremy David</h1>
           </div>
 
