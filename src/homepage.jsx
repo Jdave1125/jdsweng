@@ -186,8 +186,7 @@ const HomePage = () => {
     <div className='page-container'>
       
       <div className="links-container">
-        <a href="/" className="link">RETURN TO TITLE</a>
-        <a href="/home" className="link active">HOME</a>
+        <a href="/" className="link active">RETURN TO TITLE</a>
         {/* <a href="/portfolio" className="link">WORKS</a> */}
       </div>
       
@@ -198,7 +197,7 @@ const HomePage = () => {
        
         <div className='collage'>
           <div className='portrait'>
-            <img src='/IMG_5586.jpg' className="photo" alt='picture of a ridiculously handome man'/>
+            <img src='IMG_5586.jpg' className="photo" alt='picture of a ridiculously handome man'/>
             <h1 className='portraitName'>Jeremy David</h1>
           </div>
 
