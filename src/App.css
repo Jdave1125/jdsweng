@@ -1,0 +1,483 @@
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+  background: linear-gradient(45deg, rgba(0, 255, 255, 0.367), white, rgba(120, 248, 135, 0.258)); 
+  background-size: 300% 300%; 
+  animation: wave 10s infinite alternate; 
+  transition: opacity 0.5s ease-in-out;
+  animation-play-state: running;
+}
+
+@keyframes wave {
+  0%{
+    background-position: 0% 50%;
+  }
+  100%{
+    background-position: 100% 50%;
+  }
+}
+
+.loader{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+  font-family: "Alumni Sans",sans-serif;
+  letter-spacing: 2.9rem;
+  color: rgba(120, 248, 135, 0.347);
+  font-size: 2rem;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+}
+
+/* welcome page start*/
+.welcome-container{
+  display: flex;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  /* box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2); Adjust the transparency of the shadow */
+  border: 1px solid rgba(0, 0, 0, 0); /* Adjust the transparency of the border */
+}
+.jeremy {
+  font-size: 8rem;
+  color: white;
+  text-decoration: none;
+  font-family: "Alumni Sans",sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 2.9rem;
+  animation: fadeIn 5.5s ease-in forwards;
+  text-shadow: 1px 4px 3px rgba(0, 0, 0, 0.129);
+}
+.subline{
+  margin-top: -6.5%;
+  margin-bottom: 10%;
+  letter-spacing: 2.8rem;
+  animation: fadeIn 5.5s ease-in forwards;
+  /* text-shadow: 1px 4px 3px rgba(0, 0, 0, 0.207); */
+  /* opacity: 0.4; */
+}
+@keyframes fadeIn {
+  from {
+    color: transparent; /* Start with transparent */
+  }
+  to {
+    color: rgb(0, 0, 0); /* Fade to white */
+  }
+}
+
+.start {
+  text-decoration: none;
+  font-size: 2rem;
+  color: rgba(120, 248, 135, 0.347);
+  /* animation: glow 4s infinite alternate; */
+  opacity: 1;
+  /* animation-delay: 5.5s; */
+  font-family: "Alumni Sans", sans-serif;
+  letter-spacing: .3rem;
+  transition: color 2.3s ease;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px black;
+  }
+  to {
+    text-shadow: 0 0 40px black;
+  }
+}
+
+.start:hover{
+  color: black;
+}
+
+.tagline{
+  position: absolute;
+  bottom: 0;
+  font-family: "Roboto Mono",monospace;
+  text-shadow: 1px 4px 3px rgba(0, 0, 0, 0.207);
+}
+/* welcome page end */
+
+
+
+/* home page start */
+
+
+.page-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  /* box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2); Adjust the transparency of the shadow */
+  border: 1px solid rgba(0, 0, 0, 0); /* Adjust the transparency of the border */
+  position: relative;
+  
+}
+
+
+.links-container{
+  /* position: fixed;
+  left: 0; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 5%;
+ 
+  height: 100vh;
+  width: 55%;
+  font-family: "Alumni Sans", sans-serif;
+  letter-spacing: .3rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+  height: 30%;
+  overflow-y: auto;
+}
+
+.hcontain ul{
+  margin:10px;
+}
+
+.hcontain li::marker {
+  color: green; /* Change bullet point color */
+  vertical-align: middle; 
+}
+
+
+.link{
+  /* margin-right: 20px; */
+  text-decoration: none;
+  color:lightgray;
+  transition: color 2.3s ease;
+  font-size: 1.5rem;
+}
+
+.link.active{
+  color:gold;
+}
+
+.link:hover{
+  color: rgba(120, 248, 135, 0.614) ;
+}
+
+.content-container{
+  /* position: sticky; */
+  display: flex;
+  margin-top: 5%;
+  flex-direction: column;
+  align-items: center;
+  /* margin-left: 10%; */
+  /* padding: 20px; */
+  height: fit-content;
+  border-radius: 12px;
+  width:149%;
+  /* padding-right: 13%; */
+  background-color: white;
+  box-shadow: 0 0 29px 2px  rgba(120, 248, 135, 0.795);
+}
+
+h1,
+p{
+  text-align: center;
+}
+
+.welcome {
+  font-size: 8rem;
+  color: white;
+  text-decoration: none;
+  font-family: "Alumni Sans",sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 7rem;
+  animation: fadeIn 5.5s ease-in forwards;
+  margin-left: 10%;
+  margin-top: 7%;
+}
+
+.wordHome{
+  font-family: "Alumni Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.homeQuote{
+  /* margin-left: 18%; */
+  font-size: 110%;
+  margin-top: 0;
+}
+
+
+.collage{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+  /* border: 1px solid black; */
+  background:url('/ma.gif');
+  background-size: cover;
+  background-attachment: fixed;
+}
+.portrait{
+  /* border: 1px solid red; */
+  border-radius: 8px;
+  width:25%;
+  font-family: "Great Vibes",cursive;
+  font-weight: 100;
+  font-style: normal;
+  color: white;
+  background: rgba(0, 0, 0, 0.847);
+  box-shadow: 1px 1px 10px 1px ;
+}
+.photo{
+  width: 85%;
+  margin-top: 5%;
+  /* height: 75%; */
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px 1px  black;
+
+}
+.stats{
+  /* border: 1px solid red; */
+  letter-spacing: .2rem;
+  padding: 10px;
+  color: white;
+  font-family: "Alumni Sans";
+  font-weight: 100;
+  margin-top: 4%;
+  margin-left: 1%;
+}
+
+.stats h1{
+  /* margin: 0; */
+
+  text-align: left;
+}
+
+.hcontain{
+  display: flex;
+  color: rgb(106, 220, 106);
+  background: rgb(0, 0, 0);
+  width: 75%;
+  
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 1px 1px 10px 10px black;
+}
+
+
+.hh{
+  margin-bottom: 100px;
+  font-weight: 400;
+}
+
+/* home page end */
+.portfolio-cont{
+  font-family: "Alumni Sans",sans-serif;
+  /* margin-top: 10%; */
+  /* margin-left: 10%; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  /* background-image: url(./public/vaga.jpg); */
+  background-size: cover;
+  width: 100%;
+  background-attachment: fixed;
+  /* padding: 20px; */
+}
+
+.works{
+  font-size: 8rem;
+  letter-spacing: 7rem;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 7rem;
+  margin-left: 5%;
+  /* animation: fadeIn 5.5s ease-in forwards; */
+}
+
+
+.expCards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  overflow: hidden;
+}
+
+
+.card {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  width: 90%;
+  box-shadow: 0 0 9px 5px rgba(120, 248, 135, 0.497);
+  margin-bottom: 20px;
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+
+.cardTitle{
+  font-weight: 100;
+  letter-spacing: .5rem;
+  
+}
+
+.expLink{
+  text-decoration: none;
+  background: rgba(99, 7, 109, 0.537);
+  width: fit-content;
+  padding: 10px;
+  align-self: center;
+  color: white;
+  border-radius: 12px;
+}
+.webSite, .expLink{
+  background: black;
+}
+.navigation-buttons{
+  display: flex;
+  justify-content: center;
+}
+.navigation-buttons button {
+  font-family: "Alumni Sans";
+  margin: 0 10px; /* Add margin between buttons */
+  padding: 10px 20px; /* Add padding to buttons */
+  font-size: 15px;
+  width: 9%;
+  letter-spacing: .25rem;
+  background-color: rgba(63, 192, 35, 0.727);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.navigation-buttons button:hover {
+  background-color: white;
+}
+.contactContainer{
+  background: rgba(0, 0, 0, 0.395);
+  width: 100%;
+  margin-top: 5%;
+  /* box-shadow: 0 0 10px 1px  rgba(63, 192, 35, 0.727);; */
+  margin-bottom: 2%;
+  
+}
+
+.contactTitle{
+  font-family: "Alumni Sans", sans-serif;
+  /* color:  rgba(63, 192, 35, 0.727); */
+  color: white;
+  font-size: 8rem;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 4rem;
+  margin-left: 5%;
+  
+}
+
+.cardHr{
+  width: 50%;
+}
+
+/* bioparagraphs */
+.bio-paragraph{
+  margin-bottom: 0.3em; /* Add margin between paragraphs */
+  line-height: 1.5; /* Adjust the line-height as needed */
+  font-size: 18px; /* Adjust the font-size as needed */
+}
+
+
+
+/* contact form */
+
+.contact-form{
+  /* margin-bottom: 10%; */
+  padding: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Alumni Sans",sans-serif;
+  background: linear-gradient(45deg, rgba(7, 71, 136, 0.725), rgba(241, 31, 199, 0.473), rgba(120, 248, 135, 0.632)); 
+  background-size: 300% 300%; 
+  animation: wave 10s infinite alternate;
+  background-attachment: fixed;
+  border-radius: 12px;
+  box-shadow: 0 0 20px 10px purple;
+}
+.form{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 35%;
+  border: 1px solid black;
+  background: rgba(0, 0, 0, 0.523);
+  padding: 5%;
+  border-radius: 18px;
+  box-shadow: 0 0 20px 1px rgb(117, 3, 96);
+}
+
+input{
+  margin-top: 8%;
+}
+
+.textbox{
+  margin-top: 8%;
+}
+
+.form button{
+  margin-top: 8%;
+  transition: background 2.3s ease;
+  opacity: 1;
+}
+
+
+.form button:hover{
+  background: rgba(149, 30, 179, 0.626);
+  cursor: pointer;
+}
+
+.contacts{
+  color: white;
+  margin-top: 18%;
+}
+
+.contacts a{
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  transition: color 2.3s ease;
+}
+
+.contacts a:hover{
+  color: rgba(149, 30, 179, 0.626);
+  cursor: pointer;
+}
