@@ -486,3 +486,143 @@ input{
   color: rgba(149, 30, 179, 0.626);
   cursor: pointer;
 }
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens here */
+  .welcome,
+  .wordHome,
+  .homeQuote {
+    font-size: 5rem;
+  }
+
+  .jeremy {
+    font-size: 5rem;
+    letter-spacing: 2rem;
+  }
+
+  .subline {
+    margin-top: -4%;
+    margin-bottom: 5%;
+    letter-spacing: 1.5rem;
+  }
+
+  .start {
+    font-size: 1.2rem;
+  }
+
+  .link {
+    font-size: 1rem;
+  }
+
+  .page-container {
+    /* Adjust container styles for smaller screens */
+    width: 100%;
+    height: 100%;
+  }
+
+  .links-container {
+    /* Adjust container styles for smaller screens */
+    width: 100%;
+  }
+
+  .content-container{
+    width: 110%;
+    display: flex;
+    height: fit-content;
+  }
+
+
+  .welcome{
+    font-size: 2rem;
+    letter-spacing: 2rem;
+  }
+  .homeQuote{
+    font-size: 19%;
+    max-width: 65%;
+    margin-left: 17%;
+  }
+
+  .collage{
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .portrait{
+    width: 45%;
+    background: transparent;
+    box-shadow: none;
+    color: transparent;
+  }
+  .photo{
+    width: 115%;
+    margin-top: 30%;
+    margin-left: -10px;
+  }
+
+  .stats{
+    width:25%;
+    font-size: .5rem;
+  }
+
+  .works{
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    margin-top: 10%;
+  }
+
+
+  .navigation-buttons button {
+    font-family: "Alumni Sans";
+    margin: 0 10px; /* Add margin between buttons */
+    padding: 10px 20px; /* Add padding to buttons */
+    font-size: 100%;
+    width: 29%;
+    letter-spacing: .25rem;
+    background-color: rgba(63, 192, 35, 0.727);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .contactTitle{
+    font-family: "Alumni Sans", sans-serif;
+    /* color:  rgba(63, 192, 35, 0.727); */
+    color: white;
+    font-size: 2rem;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 2rem;
+    margin-left: 5%;
+    
+  }
+  
+  .form{
+    width: 55%;
+  }
+  .contacts{
+    color: white;
+    margin-top: 38%;
+    margin-left: 5%;
+    font-size: .7rem;
+  }
+
+  .bio-paragraph{
+    margin-bottom: 0.3em; /* Add margin between paragraphs */
+    line-height: 1.5; /* Adjust the line-height as needed */
+    font-size: .8rem; /* Adjust the font-size as needed */
+    /* border: 1px solid yellow; */
+    max-width: 65%;
+  }
+
+  .hcontain{
+    width: 100%;
+    padding: 0;
+  }
+
+  .card .bio-paragraph {
+
+    margin-left: 20%;
+  }
+  /* Continue adjusting styles for other elements as needed */
+}

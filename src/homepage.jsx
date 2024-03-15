@@ -231,7 +231,7 @@ const HomePage = () => {
                 </a>
                 <h3>{cards[currentCardIndex].description}</h3>
                 <hr className='cardHr'/>
-                <Bio text={cards[currentCardIndex].bio} />
+                <Bio className="yo" text={cards[currentCardIndex].bio} />
               </motion.div>
             </div>
             <div className='navigation-buttons'>
