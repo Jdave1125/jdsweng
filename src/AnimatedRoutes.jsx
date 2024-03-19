@@ -1,7 +1,7 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Welcome from './welcome';
 import HomePage from './homepage';
-import Portfolio from './portfolio';
+
 import { useEffect, useState, Suspense } from 'react';
 import {AnimatePresence} from 'framer-motion'
 
