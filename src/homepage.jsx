@@ -226,7 +226,7 @@ const HomePage = () => {
             <div className='expCards'>
               <motion.div className='card'>
                 <h1 className='cardTitle'>{cards[currentCardIndex].title}</h1>
-                <a className='expLink' href={cards[currentCardIndex].link}>
+                <a className='expLink' href={cards[currentCardIndex].link} target="_blank" rel="noreferrer">
                   {cards[currentCardIndex].linkTitle}
                 </a>
                 <h3>{cards[currentCardIndex].description}</h3>
