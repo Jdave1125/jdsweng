@@ -11,12 +11,10 @@ const App = () => {
   return (
    
     <Router>
-      
     <div>
 
           <AnimatedRoutes />
     </div>
-   
     </Router>
   );
 };
